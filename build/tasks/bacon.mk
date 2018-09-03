@@ -17,5 +17,5 @@
 
 .PHONY: bacon
 bacon: $(INTERNAL_OTA_PACKAGE_TARGET)
-	$(hide) ln -f $(INTERNAL_OTA_PACKAGE_TARGET) $(LUCID_BUILD_ZIP).zip
+	$(hide) mv $(INTERNAL_OTA_PACKAGE_TARGET) $(LUCID_BUILD_ZIP).zip
 	@echo "Package Complete: $(LUCID_BUILD_ZIP).zip" >&2
