@@ -18,3 +18,6 @@
 LUCID_BUILD_ID := $(shell echo $(BUILD_ID) | tr '[:upper:]' '[:lower:]')
 LUCID_BUILD_CODE := Agedan
 LUCID_BUILD_ZIP += lucidOS-$(LUCID_VERSION_CODE)-$(TARGET_PRODUCT)-ota-$(LUCID_BUILD_ID)-REL.(shell date +%Y%m%d)
+
+# Overlays
+DEVICE_PACKAGE_OVERLAYS += device/lucid/common/overlay
