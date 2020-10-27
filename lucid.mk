@@ -21,3 +21,7 @@ LUCID_BUILD_ZIP += lucidOS-$(LUCID_VERSION_CODE)-$(TARGET_PRODUCT)-ota-$(LUCID_B
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += device/lucid/common/overlay
+
+# Packages
+PRODUCT_PACKAGES += \
+    ThemePicker
